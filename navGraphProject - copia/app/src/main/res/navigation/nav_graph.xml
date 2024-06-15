@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/catListFragment">
+
+    <fragment
+        android:id="@+id/catListFragment"
+        android:name="wep.app.emilioenlaluna.navgraphproject.fragments.CatListFragment"
+        android:label="Cat List"
+        tools:layout="@layout/fragment_cat_list" />
+
+    <fragment
+        android:id="@+id/actorListFragment"
+        android:name="wep.app.emilioenlaluna.navgraphproject.fragments.ActorListFragment"
+        android:label="Actor List"
+        tools:layout="@layout/fragment_actor_list" />
+
+    <fragment
+        android:id="@+id/movieListFragment"
+        android:name="wep.app.emilioenlaluna.navgraphproject.fragments.MovieListFragment"
+        android:label="Movie List"
+        tools:layout="@layout/fragment_movie_list" />
+</navigation>

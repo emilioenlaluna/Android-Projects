@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">NavGraphProject</string>
+    <string name="photo_list">Photo List</string>
+    <string name="actor_list">Actor List</string>
+    <string name="movie_list">Movie List</string>
+    <string name="cat_list">Cat List</string>
+    <string name="actor_image">Actor Image</string>
+    <string name="movie_image">Movie Image</string>
+    <string name="cat_image">Cat Image</string>
+</resources>
