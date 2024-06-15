@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="wep.app.emilioenlaluna.examenconvertidor.fragments.CelsiusViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/celsiusEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_celsius"
+            android:inputType="numberDecimal"
+            android:text="@={viewModel.celsius}" />
+
+        <TextView
+            android:id="@+id/fahrenheitTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@{@string/fahrenheit_format(viewModel.fahrenheit)}" />
+
+        <Button
+            android:id="@+id/navigateToFahrenheitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/navigate_to_fahrenheit" />
+
+    </LinearLayout>
+</layout>

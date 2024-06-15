@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/photoListFragment">
+
+    <fragment
+        android:id="@+id/photoListFragment"
+        android:name="wep.app.emilioenlaluna.projectnavphoto.fragments.PhotoListFragment"
+        android:label="Photo List"
+        tools:layout="@layout/fragment_photo_list">
+        <action
+            android:id="@+id/action_photoListFragment_to_cameraFragment"
+            app:destination="@id/cameraFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/cameraFragment"
+        android:name="wep.app.emilioenlaluna.projectnavphoto.fragments.CameraFragment"
+        android:label="Camera"
+        tools:layout="@layout/fragment_camera">
+        <action
+            android:id="@+id/action_cameraFragment_to_photoListFragment"
+            app:destination="@id/photoListFragment" />
+    </fragment>
+
+</navigation>

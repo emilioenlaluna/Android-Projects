@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/celsiusFragment">
+
+    <fragment
+        android:id="@+id/celsiusFragment"
+        android:name="wep.app.emilioenlaluna.examenconvertidor.fragments.CelsiusFragment"
+        android:label="Celsius"
+        tools:layout="@layout/fragment_celsius">
+        <action
+            android:id="@+id/action_celsiusFragment_to_fahrenheitFragment"
+            app:destination="@id/fahrenheitFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fahrenheitFragment"
+        android:name="wep.app.emilioenlaluna.examenconvertidor.fragments.FahrenheitFragment"
+        android:label="Fahrenheit"
+        tools:layout="@layout/fragment_fahrenheit">
+        <action
+            android:id="@+id/action_fahrenheitFragment_to_celsiusFragment"
+            app:destination="@id/celsiusFragment" />
+    </fragment>
+
+</navigation>

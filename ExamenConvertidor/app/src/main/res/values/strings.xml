@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Temperature Converter</string>
+
+    <!-- Celsius Fragment -->
+    <string name="enter_celsius">Enter Celsius:</string>
+    <string name="fahrenheit_format">Fahrenheit: %.2f</string>
+
+    <!-- Fahrenheit Fragment -->
+    <string name="enter_fahrenheit">Enter Fahrenheit:</string>
+    <string name="celsius_format">Celsius: %.2f</string>
+
+    <string name="navigate_to_fahrenheit">Ir a Fahrenheit</string>
+    <string name="navigate_to_celsius">Ir a Celsius</string>
+</resources>

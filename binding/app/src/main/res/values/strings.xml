@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">binding</string>
+    <string name="greet">Hello</string>
+</resources>
